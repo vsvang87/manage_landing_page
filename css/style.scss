@@ -1,0 +1,81 @@
+@use 'colors' as *;
+@use 'mixins' as *;
+@use 'variables' as *;
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+   /*  font-size: clamp(1rem, 1.5vw, 2rem); */
+   
+}
+.container {
+width: min(90%, 100rem);
+margin-inline: auto;
+}
+/*------------------Header-------------------*/
+header {
+    height: 100vh;
+    padding: 2rem 0;
+    background-image: url(/manage-landing-page-master/images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top -300px right -150px;
+    nav {
+        @include flexspacebetween;
+        @include container;
+        ul{
+            @include flexspacebetween;
+            li {
+                list-style-type: none;
+                padding: 0 1rem;
+                a {
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: 800;
+                    color: $colorVeryDarkBlue;
+                }
+            }
+        }
+    }
+    .button-container {
+        .get-start-btn {
+            text-decoration: none;
+            font-weight: 600;
+            background: $colorRed;
+            color: $colorLightGray;
+            padding: 1rem 1.8rem;
+            border-radius: 50px 50px;
+        }
+    }
+    .main-content {
+        @include flexspacebetween;
+        @include container;
+    }
+}
+
+/*---------------Section 1--------------*/
+.sect-1 { 
+    min-height: 80vh;
+    background-image: url(/manage-landing-page-master/images/bg-tablet-pattern.svg);
+    background-position: bottom -300px left -350px ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .wrapper {
+        @include container;
+        @include flexspacebetween;
+        @include flexAlignStart;
+        gap: 1rem;
+    }
+    .left {
+        min-height: 80vh;
+        width: 50%;
+       
+
+       
+    }
+    .right {
+        width: 50%;
+       
+    }
+}

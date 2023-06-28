@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  /*  font-size: clamp(1rem, 1.5vw, 2rem); */
+}
+
+.container {
+  width: min(90%, 100rem);
+  margin-inline: auto;
+}
+
+/*------------------Header-------------------*/
+header {
+  height: 100vh;
+  padding: 2rem 0;
+  background-image: url(/manage-landing-page-master/images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top -300px right -150px;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: min(90%, 100rem);
+  margin-inline: auto;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul li {
+  list-style-type: none;
+  padding: 0 1rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  color: hsl(233, 12%, 13%);
+}
+header .button-container .get-start-btn {
+  text-decoration: none;
+  font-weight: 600;
+  background: hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 98%);
+  padding: 1rem 1.8rem;
+  border-radius: 50px 50px;
+}
+header .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: min(90%, 100rem);
+  margin-inline: auto;
+}
+
+/*---------------Section 1--------------*/
+.sect-1 {
+  min-height: 80vh;
+  background-image: url(/manage-landing-page-master/images/bg-tablet-pattern.svg);
+  background-position: bottom -300px left -350px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.sect-1 .wrapper {
+  width: min(90%, 100rem);
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+}
+.sect-1 .left {
+  min-height: 80vh;
+  width: 50%;
+}
+.sect-1 .right {
+  width: 50%;
+}/*# sourceMappingURL=style.css.map */
