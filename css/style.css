@@ -1,7 +1,10 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -149,7 +152,7 @@ header .main-content .content-left .left-button-container .btn:hover {
 .sect-1 .left .left-content h2 {
   font-size: 2.5rem;
   font-family: sans-serif;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .sect-1 .left .left-content p {
   width: 50%;
@@ -179,4 +182,69 @@ header .main-content .content-left .left-button-container .btn:hover {
   margin-right: 1.5rem;
   color: hsl(0, 0%, 98%);
   border-radius: 50px 50px;
+}
+
+/*-----------------Section 2---------------*/
+.sect-2 {
+  min-height: 80vh;
+}
+.sect-2 .sect-2-content h1 {
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: 4rem;
+  color: hsl(228, 39%, 23%);
+}
+.sect-2 .sect-2-content .inner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.sect-2 .sect-2-content .inner-content .quote {
+  background: hsl(0, 0%, 98%);
+  min-height: 25vh;
+  padding: 1rem 3rem;
+  position: relative;
+}
+.sect-2 .sect-2-content .inner-content .quote img {
+  width: 10%;
+  position: absolute;
+  top: -30px;
+  right: 16rem;
+}
+.sect-2 .sect-2-content .inner-content .quote .ali {
+  right: 19rem;
+}
+.sect-2 .sect-2-content .inner-content .quote h4 {
+  padding: 0.5rem;
+}
+.sect-2 .sect-2-content .inner-content .quote p {
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+.sect-2 .sect-2-content .get-start-div {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+.sect-2 .sect-2-content .get-start-div .btn {
+  background: hsl(12, 88%, 59%);
+  padding: 1rem 2rem;
+  border: none;
+  color: hsl(0, 0%, 98%);
+  border-radius: 50px 50px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+.sect-2 .sect-2-content .get-start-div .btn:hover {
+  background: rgb(255, 159, 121);
 }/*# sourceMappingURL=style.css.map */

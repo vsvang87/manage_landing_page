@@ -2,10 +2,14 @@
 @use 'mixins' as *;
 @use 'variables' as *;
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    
 }
 .container {
 width: min(90%, 100rem);
@@ -120,7 +124,7 @@ header {
             h2 {
                 font-size: 2.5rem;
                 font-family: sans-serif;
-                margin-top: 1rem;
+                margin-top: 0.5rem;
             }
             p {
                 width: 50%;
@@ -157,5 +161,63 @@ header {
                 }
             }
        }
+    }
+}
+ /*-----------------Section 2---------------*/
+.sect-2 {
+    min-height: 80vh;
+    .sect-2-content {
+        h1 {
+            font-size: 2.5rem;
+            font-family: sans-serif;
+            text-align: center;
+            padding-bottom: 4rem;
+            color: $colorDarkBlue;
+        }
+        .inner-content {
+            @include flexspacebetween;
+            gap: 2rem;
+            text-align: center;
+            .quote {
+                background: $colorLightGray;
+                min-height: 25vh;
+                padding: 1rem 3rem;
+                position: relative;
+                img {
+                    width: 10%;
+                    position: absolute;
+                    top: -30px;
+                    right: 16rem;
+                }
+                .ali {
+                    right: 19rem;
+                    
+                }
+                h4 {
+                    padding: .5rem;
+                }
+                p {
+                    font-weight: bold;
+                    line-height: 1.8rem;
+                }
+            }
+        }
+        .get-start-div {
+            text-align: center;
+            margin-top: 3.5rem;
+            .btn {
+                background: $orange;
+                padding: 1rem 2rem;
+                border: none;
+                color: $colorLightGray;
+                border-radius: 50px 50px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: .15s ease-in-out;
+                &:hover {
+                    background: $lightOrange;
+                }
+            }
+        }
     }
 }
