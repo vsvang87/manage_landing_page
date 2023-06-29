@@ -211,11 +211,126 @@ header {
                 border: none;
                 color: $colorLightGray;
                 border-radius: 50px 50px;
+                box-shadow: 5px 5px 10px 5px rgba($color: $orange, $alpha: 0.1);
                 font-weight: bold;
                 cursor: pointer;
                 transition: .15s ease-in-out;
                 &:hover {
                     background: $lightOrange;
+                }
+            }
+        }
+    }
+}
+/*------------------Section 3-------------------*/
+.sect-3 {
+    background: $orange;
+    min-height: 30vh;
+    background-image: url(/manage-landing-page-master/images/bg-simplify-section-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bg {
+        @include container;
+        .sect-3-content {
+            @include flexspacebetween;
+            min-height: 30vh;
+            .col {
+                width: 50%;
+            }
+            .left-content {
+                
+                h1 {
+                    color: $colorLightGray;
+                    font-size: 3rem;
+                    font-family: sans-serif;
+                    width: 60%;
+                }
+            }
+            .right-content {
+                text-align: right;
+                .btn {
+                background: $colorLightGray;
+                padding: 1rem 2rem;
+                border: none;
+                color: $orange;
+                border-radius: 50px 50px;
+                box-shadow: 5px 5px 10px 5px rgba($color: $orange, $alpha: 0.1);
+                font-weight: bold;
+                cursor: pointer;
+                transition: .15s ease-in-out;
+                &:hover {
+                    background: $lightOrange;
+                }
+                }
+            }
+        }
+    }
+}
+/*--------------Footer-Section---------------*/
+.footer-section {
+    min-height: 30vh;
+    background: $colorVeryDarkBlue;
+    @include flexCenter;
+    .wrapper {
+        @include container;
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 30vh;
+            .footer-col {
+                .social-icons {
+                    margin-top: 4rem;
+                    img {
+                        margin-right: .8rem;
+                    }
+                }
+                ul {
+                    padding: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    li {
+                        list-style-type: none;
+                       padding-bottom: 1rem;
+                        a {
+                            color: $colorLightGray;
+                            text-decoration: none;
+                            font-weight: bold;
+                            transition: 0.15s ease-in-out;
+                            &:hover {
+                                color: $orange;
+                            }
+                        }
+                    }
+                }
+                input {
+                    outline: none;
+                    padding: 1rem 1.5rem;
+                    border-radius: 50px 50px;
+                    font-weight: bold;
+                }
+                .btn {
+                background: $orange;
+                padding: 1rem 2rem;
+                border: none;
+                color: $colorLightGray;
+                border-radius: 50px 50px;
+                box-shadow: 5px 5px 10px 5px rgba($color: $orange, $alpha: 0.1);
+                font-weight: bold;
+                cursor: pointer;
+                transition: .15s ease-in-out;
+                &:hover {
+                    background: $lightOrange;
+                }
+                }
+                p {
+                    margin-top: 4rem;
+                    color: $colorLightGray;
+                 
                 }
             }
         }
