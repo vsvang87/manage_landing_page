@@ -114,18 +114,75 @@ header nav .hamburger {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+@media (min-width: 970px) {
+  .main-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .main-content .col {
   width: 100%;
 }
-.main-content .content-right img {
+@media (min-width: 970px) {
+  .main-content .col {
+    width: 50%;
+  }
+}
+.main-content .content-right {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 970px) {
+  .main-content .content-right {
+    text-align: right;
+  }
+}
+.main-content .content-right img {
+  width: 50%;
+  text-align: right;
+}
+@media (min-width: 970px) {
+  .main-content .content-right img {
+    width: 100%;
+  }
 }
 .main-content .content-left {
   text-align: center;
 }
+@media (min-width: 970px) {
+  .main-content .content-left {
+    text-align: left;
+    width: 100%;
+  }
+}
 .main-content .content-left h1 {
   font-family: sans-serif;
   color: hsl(228, 39%, 23%);
+}
+@media (min-width: 970px) {
+  .main-content .content-left h1 {
+    font-size: 3rem;
+    width: 70%;
+  }
 }
 .main-content .content-left p {
   font-size: 1.2rem;
@@ -133,6 +190,12 @@ header nav .hamburger {
   font-weight: 700;
   padding: 0 2.2rem;
   line-height: 2rem;
+}
+@media (min-width: 970px) {
+  .main-content .content-left p {
+    width: 70%;
+    padding: 0;
+  }
 }
 .main-content .content-left .left-button-container {
   margin-top: 3rem;
@@ -177,6 +240,17 @@ header nav .hamburger {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (min-width: 970px) {
+  .sect-1 .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .sect-1 .left {
   min-height: 20vh;
   width: 100%;
@@ -189,6 +263,11 @@ header nav .hamburger {
   font-family: sans-serif;
   margin-top: 0.5rem;
   padding: 0 2rem;
+}
+@media (min-width: 970px) {
+  .sect-1 .left .left-content h2 {
+    padding-top: 3rem;
+  }
 }
 .sect-1 .left .left-content p {
   padding: 0 2rem;
@@ -229,7 +308,7 @@ header nav .hamburger {
 
 /*-----------------Section 2---------------*/
 .sect-2 {
-  min-height: 80vh;
+  min-height: 60vh;
   padding: 4rem 0;
 }
 .sect-2 .sect-2-content h1 {
@@ -255,6 +334,14 @@ header nav .hamburger {
           flex-direction: column;
   gap: 2rem;
   text-align: center;
+}
+@media (min-width: 1120px) {
+  .sect-2 .sect-2-content .inner-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .sect-2 .sect-2-content .inner-content .quote {
   background: hsl(0, 0%, 98%);
@@ -330,6 +417,14 @@ header nav .hamburger {
   min-height: 30vh;
   text-align: center;
 }
+@media (min-width: 700px) {
+  .sect-3 .bg .sect-3-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .sect-3 .bg .sect-3-content .col {
   width: 50%;
 }
@@ -392,6 +487,23 @@ header nav .hamburger {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 30vh;
+}
+@media (min-width: 970px) {
+  .footer-section .wrapper .footer-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .footer-section .wrapper .footer-content .footer-col .social-icons {
   margin-top: 1.5rem;
